@@ -1,0 +1,62 @@
+.form{
+  background-color: #dbd9d9;
+  border-top: 2px solid rgb(68, 21, 112);
+  margin: 15px 0;
+  padding: 20px 5%;
+}
+
+.form h3{
+  margin-bottom: 20px;
+}
+
+.form .pick-sit{
+  display: grid;
+  min-width: 50%;
+  grid-template-columns: 70px 100px 150px 80px;
+  gap: 20px;
+}
+
+.pick-sit select,
+.pick-sit input{
+  padding: 5px 15px;
+  outline: none;
+  border-width: 1.5px;
+  background-color: transparent;
+}
+
+.price-summary{
+  margin: 25px 0;
+  display: flex;
+  gap: 50px;
+}
+
+.price-summary h4{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-action{
+  text-align: right;
+}
+
+.form-action button{
+  font-size: 18px;
+  padding: 10px 25px;
+}
+
+.errorMsg{
+  color: #eb8383;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 3s ease-out;
+}
+
+@media (max-width: 768px){
+  .form .pick-sit{
+    grid-template-columns: 200px;
+  }
+
+  .price-summary{
+    gap: 30px;
+  }
+}

@@ -1,0 +1,80 @@
+.list {
+  list-style: none;
+  border-bottom: 3px dotted rgb(68, 21, 112);
+  padding: 20px 0;
+}
+
+.list:last-child {
+  border-bottom: 0;
+}
+
+.cinema {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cinema .details {
+  flex: 1;
+  display: flex;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.cinema .details img {
+  /* height: 50px; */
+  width: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cinema .details p {
+  display: flex;
+  gap: 10px;
+}
+
+.cinema .details h4 span:first-child {
+  color: rgb(68, 21, 112);
+  margin-right: 5px;
+}
+
+.cinema .date {
+  flex-basis: 150px;
+}
+
+.control-action {
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 5px 5%;
+}
+
+.control-action .isSelected {
+  background-color: #f3baba;
+  color: #ff0000;
+}
+
+.cinema .selectTextColor {
+  color: rgb(68, 21, 112);
+}
+
+@media (max-width: 768px) {
+  .cinema {
+    flex-direction: column;
+  }
+  .cinema .details {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cinema .details img {
+    width: auto;
+    height: 200px;
+  }
+
+  .cinema .date {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

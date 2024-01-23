@@ -1,0 +1,60 @@
+.successMsg{
+  background-color: rgb(68, 21, 112);
+  width: 40%;
+  height: auto;
+  margin: auto;
+  border-radius: 12px;
+  padding: 30px 50px;
+  color: #fff;
+}
+
+.successMsg p{
+  text-align: center;
+}
+
+.bookedDetails h4{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.bookedDetails h4 span:first-child{
+  flex-basis: 100px;
+}
+
+.bankDetails{
+  background-color: rgb(88, 23, 150);
+  width: auto;
+  margin: 25px auto;
+  padding: 16px;
+  font-size: 18px;
+}
+
+.bankDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.successMsg .actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actions button{
+  background-color: #fff;
+  color: rgb(68, 21, 112);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.actions button:hover{
+  background-color: #fff;
+}
+
+@media (max-width: 768px){
+  .successMsg{
+    width: 90%;
+  }
+}

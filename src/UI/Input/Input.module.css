@@ -1,0 +1,32 @@
+.input{
+  width: 90%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.input label{
+  flex-basis: 100px;
+}
+
+.input input{
+  flex: 1;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(68, 21, 112);
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px){
+  .input{
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .input label{
+    flex-basis: 100%;
+  };
+}
